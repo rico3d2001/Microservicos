@@ -1,0 +1,40 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/v1/Catalog",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "catalogo.api",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v1/Catalog"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/Catalog/{id:length(24)}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "catalogo.api",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v1/Catalog/{id:length(24)}"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/Catalog/GetProductByCategory/{category}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "catalogo.api",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v1/Catalog/GetProductByCategory/{category}"
+    }
+  ]
+}

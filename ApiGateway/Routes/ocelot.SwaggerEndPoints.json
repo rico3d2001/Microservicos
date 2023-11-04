@@ -1,0 +1,37 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "catalog",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "API Catalogo",
+          "Version": "1.0",
+          "Url": "http://catalogo.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "basket",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "API Basket",
+          "Version": "1.0",
+          "Url": "http://basket.api/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "discount",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "API Discount",
+          "Version": "1.0",
+          "Url": "http://discount.api/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

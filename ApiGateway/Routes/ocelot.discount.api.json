@@ -1,0 +1,28 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/v1/Discount",
+      "UpstreamHttpMethod": [ "Post", "Put" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "discount.api",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v1/Discount"
+    },
+    {
+      "UpstreamPathTemplate": "/api/v1/Discount/{productName}",
+      "UpstreamHttpMethod": [ "Get", "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "discount.api",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/v1/Discount/{productName}"
+    }
+  ]
+}
